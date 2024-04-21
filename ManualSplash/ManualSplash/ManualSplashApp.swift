@@ -11,7 +11,7 @@ import SwiftUI
 struct ManualSplashApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchScreen()
         }
     }
 }

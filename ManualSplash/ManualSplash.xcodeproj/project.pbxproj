@@ -14,6 +14,7 @@
 		EB486BF82BD4FCAE00C33BA8 /* ManualSplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB486BF72BD4FCAE00C33BA8 /* ManualSplashTests.swift */; };
 		EB486C022BD4FCAE00C33BA8 /* ManualSplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB486C012BD4FCAE00C33BA8 /* ManualSplashUITests.swift */; };
 		EB486C042BD4FCAE00C33BA8 /* ManualSplashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB486C032BD4FCAE00C33BA8 /* ManualSplashUITestsLaunchTests.swift */; };
+		EB486C112BD4FE4400C33BA8 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB486C102BD4FE4400C33BA8 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EB486BFD2BD4FCAE00C33BA8 /* ManualSplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManualSplashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB486C012BD4FCAE00C33BA8 /* ManualSplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualSplashUITests.swift; sourceTree = "<group>"; };
 		EB486C032BD4FCAE00C33BA8 /* ManualSplashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualSplashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB486C102BD4FE4400C33BA8 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EB486BE62BD4FCAD00C33BA8 /* ManualSplashApp.swift */,
+				EB486C102BD4FE4400C33BA8 /* LaunchScreen.swift */,
 				EB486BE82BD4FCAD00C33BA8 /* ContentView.swift */,
 				EB486BEA2BD4FCAE00C33BA8 /* Assets.xcassets */,
 				EB486BEC2BD4FCAE00C33BA8 /* Preview Content */,
@@ -259,6 +262,7 @@
 			files = (
 				EB486BE92BD4FCAD00C33BA8 /* ContentView.swift in Sources */,
 				EB486BE72BD4FCAD00C33BA8 /* ManualSplashApp.swift in Sources */,
+				EB486C112BD4FE4400C33BA8 /* LaunchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
