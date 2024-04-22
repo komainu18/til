@@ -13,9 +13,27 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("終わる", action: backToHomeScreenOfDevice)
+                .foregroundColor(.white)
+                .padding(.vertical)
+                .padding(.horizontal, 20)
+                .background {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.tint)
+                }
         }
         .padding()
+    }
+    
+    /**
+     * アプリをバックグラウンドにする
+     */
+    private func backToHomeScreenOfDevice() {
+        UIControl().sendAction(
+            #selector(URLSessionTask.suspend),
+            to: UIApplication.shared,
+            for: nil
+        )
     }
 }
 
