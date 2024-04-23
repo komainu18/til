@@ -10,6 +10,8 @@ import SwiftUI
 struct LaunchScreen: View {
     @State private var isLoading = true
 
+    //TODO: スプラッシュ状態のフラグを切り替えることで、スプラッシュ終了あるいは再度スプラッシュ画面表示
+    //TODO: フラグはMainViewModelのような共有の部分に持たせて、他からの要求をここでObserveできるようにする？
     var body: some View {
         if isLoading {
             ZStack {
