@@ -20,10 +20,14 @@ struct ContentView: View {
                 .environment(\.locale, Locale(identifier: "ja_JP"))
             Text("HelloWorld")
                 .environment(\.locale, Locale(identifier: "en_US"))
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+            //String(localized: "key", locale: Locale(identifier: "ja_JP"))
+
+            //画像は名前分けするしかない？
+            let name = "128x128"
+            Image("\(name)ja")
             Text(String(localized: "HelloWorld", lang: "ja"))
+
+            Image("\(name)en")
             Text(String(localized: "HelloWorld", lang: "en"))
         }
         .padding()
