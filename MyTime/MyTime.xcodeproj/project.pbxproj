@@ -1,0 +1,1014 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB30BB3C2BDD11670077761F /* MyTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB3B2BDD11670077761F /* MyTimeApp.swift */; };
+		EB30BB3E2BDD11670077761F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB3D2BDD11670077761F /* ContentView.swift */; };
+		EB30BB402BDD11690077761F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB30BB3F2BDD11690077761F /* Assets.xcassets */; };
+		EB30BB432BDD11690077761F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB30BB422BDD11690077761F /* Preview Assets.xcassets */; };
+		EB30BB4D2BDD11690077761F /* MyTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB4C2BDD11690077761F /* MyTimeTests.swift */; };
+		EB30BB572BDD11690077761F /* MyTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB562BDD11690077761F /* MyTimeUITests.swift */; };
+		EB30BB592BDD11690077761F /* MyTimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB582BDD11690077761F /* MyTimeUITestsLaunchTests.swift */; };
+		EB30BB5F2BDD11690077761F /* MyTime Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB30BB5E2BDD11690077761F /* MyTime Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB30BB642BDD11690077761F /* MyTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB632BDD11690077761F /* MyTimeApp.swift */; };
+		EB30BB662BDD11690077761F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB652BDD11690077761F /* ContentView.swift */; };
+		EB30BB682BDD116A0077761F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB30BB672BDD116A0077761F /* Assets.xcassets */; };
+		EB30BB6B2BDD116A0077761F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB30BB6A2BDD116A0077761F /* Preview Assets.xcassets */; };
+		EB30BB752BDD116A0077761F /* MyTime_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB742BDD116A0077761F /* MyTime_Watch_AppTests.swift */; };
+		EB30BB7F2BDD116A0077761F /* MyTime_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB7E2BDD116A0077761F /* MyTime_Watch_AppUITests.swift */; };
+		EB30BB812BDD116A0077761F /* MyTime_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB802BDD116A0077761F /* MyTime_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB30BB492BDD11690077761F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB30BB302BDD11670077761F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB30BB372BDD11670077761F;
+			remoteInfo = MyTime;
+		};
+		EB30BB532BDD11690077761F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB30BB302BDD11670077761F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB30BB372BDD11670077761F;
+			remoteInfo = MyTime;
+		};
+		EB30BB602BDD11690077761F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB30BB302BDD11670077761F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB30BB5D2BDD11690077761F;
+			remoteInfo = "MyTime Watch App";
+		};
+		EB30BB712BDD116A0077761F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB30BB302BDD11670077761F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB30BB5D2BDD11690077761F;
+			remoteInfo = "MyTime Watch App";
+		};
+		EB30BB7B2BDD116A0077761F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB30BB302BDD11670077761F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB30BB5D2BDD11690077761F;
+			remoteInfo = "MyTime Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB30BB872BDD116A0077761F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EB30BB5F2BDD11690077761F /* MyTime Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB30BB382BDD11670077761F /* MyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB30BB3B2BDD11670077761F /* MyTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimeApp.swift; sourceTree = "<group>"; };
+		EB30BB3D2BDD11670077761F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB30BB3F2BDD11690077761F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB30BB422BDD11690077761F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB30BB482BDD11690077761F /* MyTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB30BB4C2BDD11690077761F /* MyTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimeTests.swift; sourceTree = "<group>"; };
+		EB30BB522BDD11690077761F /* MyTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB30BB562BDD11690077761F /* MyTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimeUITests.swift; sourceTree = "<group>"; };
+		EB30BB582BDD11690077761F /* MyTimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB30BB5E2BDD11690077761F /* MyTime Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyTime Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB30BB632BDD11690077761F /* MyTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimeApp.swift; sourceTree = "<group>"; };
+		EB30BB652BDD11690077761F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB30BB672BDD116A0077761F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB30BB6A2BDD116A0077761F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB30BB702BDD116A0077761F /* MyTime Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyTime Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB30BB742BDD116A0077761F /* MyTime_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTime_Watch_AppTests.swift; sourceTree = "<group>"; };
+		EB30BB7A2BDD116A0077761F /* MyTime Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyTime Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB30BB7E2BDD116A0077761F /* MyTime_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTime_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		EB30BB802BDD116A0077761F /* MyTime_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTime_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB30BB352BDD11670077761F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB452BDD11690077761F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB4F2BDD11690077761F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB5B2BDD11690077761F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB6D2BDD116A0077761F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB772BDD116A0077761F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB30BB2F2BDD11670077761F = {
+			isa = PBXGroup;
+			children = (
+				EB30BB3A2BDD11670077761F /* MyTime */,
+				EB30BB4B2BDD11690077761F /* MyTimeTests */,
+				EB30BB552BDD11690077761F /* MyTimeUITests */,
+				EB30BB622BDD11690077761F /* MyTime Watch App */,
+				EB30BB732BDD116A0077761F /* MyTime Watch AppTests */,
+				EB30BB7D2BDD116A0077761F /* MyTime Watch AppUITests */,
+				EB30BB392BDD11670077761F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB30BB392BDD11670077761F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB382BDD11670077761F /* MyTime.app */,
+				EB30BB482BDD11690077761F /* MyTimeTests.xctest */,
+				EB30BB522BDD11690077761F /* MyTimeUITests.xctest */,
+				EB30BB5E2BDD11690077761F /* MyTime Watch App.app */,
+				EB30BB702BDD116A0077761F /* MyTime Watch AppTests.xctest */,
+				EB30BB7A2BDD116A0077761F /* MyTime Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB30BB3A2BDD11670077761F /* MyTime */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB3B2BDD11670077761F /* MyTimeApp.swift */,
+				EB30BB3D2BDD11670077761F /* ContentView.swift */,
+				EB30BB3F2BDD11690077761F /* Assets.xcassets */,
+				EB30BB412BDD11690077761F /* Preview Content */,
+			);
+			path = MyTime;
+			sourceTree = "<group>";
+		};
+		EB30BB412BDD11690077761F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB422BDD11690077761F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB30BB4B2BDD11690077761F /* MyTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB4C2BDD11690077761F /* MyTimeTests.swift */,
+			);
+			path = MyTimeTests;
+			sourceTree = "<group>";
+		};
+		EB30BB552BDD11690077761F /* MyTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB562BDD11690077761F /* MyTimeUITests.swift */,
+				EB30BB582BDD11690077761F /* MyTimeUITestsLaunchTests.swift */,
+			);
+			path = MyTimeUITests;
+			sourceTree = "<group>";
+		};
+		EB30BB622BDD11690077761F /* MyTime Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB632BDD11690077761F /* MyTimeApp.swift */,
+				EB30BB652BDD11690077761F /* ContentView.swift */,
+				EB30BB672BDD116A0077761F /* Assets.xcassets */,
+				EB30BB692BDD116A0077761F /* Preview Content */,
+			);
+			path = "MyTime Watch App";
+			sourceTree = "<group>";
+		};
+		EB30BB692BDD116A0077761F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB6A2BDD116A0077761F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB30BB732BDD116A0077761F /* MyTime Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB742BDD116A0077761F /* MyTime_Watch_AppTests.swift */,
+			);
+			path = "MyTime Watch AppTests";
+			sourceTree = "<group>";
+		};
+		EB30BB7D2BDD116A0077761F /* MyTime Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB30BB7E2BDD116A0077761F /* MyTime_Watch_AppUITests.swift */,
+				EB30BB802BDD116A0077761F /* MyTime_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "MyTime Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB30BB372BDD11670077761F /* MyTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30BB882BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTime" */;
+			buildPhases = (
+				EB30BB342BDD11670077761F /* Sources */,
+				EB30BB352BDD11670077761F /* Frameworks */,
+				EB30BB362BDD11670077761F /* Resources */,
+				EB30BB872BDD116A0077761F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB30BB612BDD11690077761F /* PBXTargetDependency */,
+			);
+			name = MyTime;
+			productName = MyTime;
+			productReference = EB30BB382BDD11670077761F /* MyTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB30BB472BDD11690077761F /* MyTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30BB8B2BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTimeTests" */;
+			buildPhases = (
+				EB30BB442BDD11690077761F /* Sources */,
+				EB30BB452BDD11690077761F /* Frameworks */,
+				EB30BB462BDD11690077761F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB30BB4A2BDD11690077761F /* PBXTargetDependency */,
+			);
+			name = MyTimeTests;
+			productName = MyTimeTests;
+			productReference = EB30BB482BDD11690077761F /* MyTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB30BB512BDD11690077761F /* MyTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30BB8E2BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTimeUITests" */;
+			buildPhases = (
+				EB30BB4E2BDD11690077761F /* Sources */,
+				EB30BB4F2BDD11690077761F /* Frameworks */,
+				EB30BB502BDD11690077761F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB30BB542BDD11690077761F /* PBXTargetDependency */,
+			);
+			name = MyTimeUITests;
+			productName = MyTimeUITests;
+			productReference = EB30BB522BDD11690077761F /* MyTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EB30BB5D2BDD11690077761F /* MyTime Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30BB842BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTime Watch App" */;
+			buildPhases = (
+				EB30BB5A2BDD11690077761F /* Sources */,
+				EB30BB5B2BDD11690077761F /* Frameworks */,
+				EB30BB5C2BDD11690077761F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyTime Watch App";
+			productName = "MyTime Watch App";
+			productReference = EB30BB5E2BDD11690077761F /* MyTime Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB30BB6F2BDD116A0077761F /* MyTime Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30BB912BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTime Watch AppTests" */;
+			buildPhases = (
+				EB30BB6C2BDD116A0077761F /* Sources */,
+				EB30BB6D2BDD116A0077761F /* Frameworks */,
+				EB30BB6E2BDD116A0077761F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB30BB722BDD116A0077761F /* PBXTargetDependency */,
+			);
+			name = "MyTime Watch AppTests";
+			productName = "MyTime Watch AppTests";
+			productReference = EB30BB702BDD116A0077761F /* MyTime Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB30BB792BDD116A0077761F /* MyTime Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30BB942BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTime Watch AppUITests" */;
+			buildPhases = (
+				EB30BB762BDD116A0077761F /* Sources */,
+				EB30BB772BDD116A0077761F /* Frameworks */,
+				EB30BB782BDD116A0077761F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB30BB7C2BDD116A0077761F /* PBXTargetDependency */,
+			);
+			name = "MyTime Watch AppUITests";
+			productName = "MyTime Watch AppUITests";
+			productReference = EB30BB7A2BDD116A0077761F /* MyTime Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB30BB302BDD11670077761F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EB30BB372BDD11670077761F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					EB30BB472BDD11690077761F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EB30BB372BDD11670077761F;
+					};
+					EB30BB512BDD11690077761F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EB30BB372BDD11670077761F;
+					};
+					EB30BB5D2BDD11690077761F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					EB30BB6F2BDD116A0077761F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EB30BB5D2BDD11690077761F;
+					};
+					EB30BB792BDD116A0077761F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EB30BB5D2BDD11690077761F;
+					};
+				};
+			};
+			buildConfigurationList = EB30BB332BDD11670077761F /* Build configuration list for PBXProject "MyTime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB30BB2F2BDD11670077761F;
+			productRefGroup = EB30BB392BDD11670077761F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB30BB372BDD11670077761F /* MyTime */,
+				EB30BB472BDD11690077761F /* MyTimeTests */,
+				EB30BB512BDD11690077761F /* MyTimeUITests */,
+				EB30BB5D2BDD11690077761F /* MyTime Watch App */,
+				EB30BB6F2BDD116A0077761F /* MyTime Watch AppTests */,
+				EB30BB792BDD116A0077761F /* MyTime Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB30BB362BDD11670077761F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30BB432BDD11690077761F /* Preview Assets.xcassets in Resources */,
+				EB30BB402BDD11690077761F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB462BDD11690077761F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB502BDD11690077761F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB5C2BDD11690077761F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30BB6B2BDD116A0077761F /* Preview Assets.xcassets in Resources */,
+				EB30BB682BDD116A0077761F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB6E2BDD116A0077761F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB782BDD116A0077761F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB30BB342BDD11670077761F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30BB3E2BDD11670077761F /* ContentView.swift in Sources */,
+				EB30BB3C2BDD11670077761F /* MyTimeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB442BDD11690077761F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30BB4D2BDD11690077761F /* MyTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB4E2BDD11690077761F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30BB572BDD11690077761F /* MyTimeUITests.swift in Sources */,
+				EB30BB592BDD11690077761F /* MyTimeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB5A2BDD11690077761F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30BB662BDD11690077761F /* ContentView.swift in Sources */,
+				EB30BB642BDD11690077761F /* MyTimeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB6C2BDD116A0077761F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30BB752BDD116A0077761F /* MyTime_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30BB762BDD116A0077761F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30BB7F2BDD116A0077761F /* MyTime_Watch_AppUITests.swift in Sources */,
+				EB30BB812BDD116A0077761F /* MyTime_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB30BB4A2BDD11690077761F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB30BB372BDD11670077761F /* MyTime */;
+			targetProxy = EB30BB492BDD11690077761F /* PBXContainerItemProxy */;
+		};
+		EB30BB542BDD11690077761F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB30BB372BDD11670077761F /* MyTime */;
+			targetProxy = EB30BB532BDD11690077761F /* PBXContainerItemProxy */;
+		};
+		EB30BB612BDD11690077761F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB30BB5D2BDD11690077761F /* MyTime Watch App */;
+			targetProxy = EB30BB602BDD11690077761F /* PBXContainerItemProxy */;
+		};
+		EB30BB722BDD116A0077761F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB30BB5D2BDD11690077761F /* MyTime Watch App */;
+			targetProxy = EB30BB712BDD116A0077761F /* PBXContainerItemProxy */;
+		};
+		EB30BB7C2BDD116A0077761F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB30BB5D2BDD11690077761F /* MyTime Watch App */;
+			targetProxy = EB30BB7B2BDD116A0077761F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB30BB822BDD116A0077761F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB30BB832BDD116A0077761F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EB30BB852BDD116A0077761F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyTime Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTime;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ya.komainu.app.MyTime;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ya.komainu.app.MyTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		EB30BB862BDD116A0077761F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyTime Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTime;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ya.komainu.app.MyTime;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ya.komainu.app.MyTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		EB30BB892BDD116A0077761F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyTime/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTime;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ya.komainu.app.MyTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB30BB8A2BDD116A0077761F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyTime/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTime;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ya.komainu.app.MyTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB30BB8C2BDD116A0077761F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ya.komainu.app.MyTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTime";
+			};
+			name = Debug;
+		};
+		EB30BB8D2BDD116A0077761F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ya.komainu.app.MyTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTime";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB30BB8F2BDD116A0077761F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ya.komainu.app.MyTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyTime;
+			};
+			name = Debug;
+		};
+		EB30BB902BDD116A0077761F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ya.komainu.app.MyTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyTime;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB30BB922BDD116A0077761F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ya.komainu.app.MyTime-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTime Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTime Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		EB30BB932BDD116A0077761F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ya.komainu.app.MyTime-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTime Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTime Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		EB30BB952BDD116A0077761F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ya.komainu.app.MyTime-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "MyTime Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		EB30BB962BDD116A0077761F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ya.komainu.app.MyTime-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "MyTime Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB30BB332BDD11670077761F /* Build configuration list for PBXProject "MyTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30BB822BDD116A0077761F /* Debug */,
+				EB30BB832BDD116A0077761F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30BB842BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTime Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30BB852BDD116A0077761F /* Debug */,
+				EB30BB862BDD116A0077761F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30BB882BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30BB892BDD116A0077761F /* Debug */,
+				EB30BB8A2BDD116A0077761F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30BB8B2BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30BB8C2BDD116A0077761F /* Debug */,
+				EB30BB8D2BDD116A0077761F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30BB8E2BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30BB8F2BDD116A0077761F /* Debug */,
+				EB30BB902BDD116A0077761F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30BB912BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTime Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30BB922BDD116A0077761F /* Debug */,
+				EB30BB932BDD116A0077761F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30BB942BDD116A0077761F /* Build configuration list for PBXNativeTarget "MyTime Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30BB952BDD116A0077761F /* Debug */,
+				EB30BB962BDD116A0077761F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB30BB302BDD11670077761F /* Project object */;
+}
