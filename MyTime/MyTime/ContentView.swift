@@ -9,12 +9,34 @@ import SwiftUI
 
 // iOS
 struct ContentView: View {
+    
+    @ObservedObject private var viewModel = PhoneViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button(action: {
+                viewModel.countup()
+            }) {
+                Image(systemName: "arrowtriangle.up.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80.0, height: 80.0)
+                    .foregroundColor(.pink)
+            }
+            .buttonStyle(.plain)
+            Text(String(Int(viewModel.counter)))
+                .font(.system(size: 64.0))
+                .bold()
+            Button(action: {
+                viewModel.countdown()
+            }) {
+                Image(systemName: "arrowtriangle.down.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80.0, height: 80.0)
+                    .foregroundColor(.blue)
+            }
+            .buttonStyle(.plain)
         }
         .padding()
     }
