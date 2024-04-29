@@ -22,6 +22,8 @@
 		EB30BB752BDD116A0077761F /* MyTime_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB742BDD116A0077761F /* MyTime_Watch_AppTests.swift */; };
 		EB30BB7F2BDD116A0077761F /* MyTime_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB7E2BDD116A0077761F /* MyTime_Watch_AppUITests.swift */; };
 		EB30BB812BDD116A0077761F /* MyTime_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB802BDD116A0077761F /* MyTime_Watch_AppUITestsLaunchTests.swift */; };
+		EB30BB982BDE7BBA0077761F /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB972BDE7BBA0077761F /* PhoneViewModel.swift */; };
+		EB30BB9A2BDE7C210077761F /* WatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30BB992BDE7C210077761F /* WatchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		EB30BB7A2BDD116A0077761F /* MyTime Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyTime Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB30BB7E2BDD116A0077761F /* MyTime_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTime_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		EB30BB802BDD116A0077761F /* MyTime_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTime_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB30BB972BDE7BBA0077761F /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
+		EB30BB992BDE7C210077761F /* WatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,7 @@
 			children = (
 				EB30BB3B2BDD11670077761F /* MyTimeApp.swift */,
 				EB30BB3D2BDD11670077761F /* ContentView.swift */,
+				EB30BB972BDE7BBA0077761F /* PhoneViewModel.swift */,
 				EB30BB3F2BDD11690077761F /* Assets.xcassets */,
 				EB30BB412BDD11690077761F /* Preview Content */,
 			);
@@ -214,6 +219,7 @@
 				EB30BB652BDD11690077761F /* ContentView.swift */,
 				EB30BB672BDD116A0077761F /* Assets.xcassets */,
 				EB30BB692BDD116A0077761F /* Preview Content */,
+				EB30BB992BDE7C210077761F /* WatchViewModel.swift */,
 			);
 			path = "MyTime Watch App";
 			sourceTree = "<group>";
@@ -467,6 +473,7 @@
 			files = (
 				EB30BB3E2BDD11670077761F /* ContentView.swift in Sources */,
 				EB30BB3C2BDD11670077761F /* MyTimeApp.swift in Sources */,
+				EB30BB982BDE7BBA0077761F /* PhoneViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +500,7 @@
 			files = (
 				EB30BB662BDD11690077761F /* ContentView.swift in Sources */,
 				EB30BB642BDD11690077761F /* MyTimeApp.swift in Sources */,
+				EB30BB9A2BDE7C210077761F /* WatchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +674,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyTime Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = MyTime;
@@ -695,6 +704,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyTime Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = MyTime;
@@ -726,6 +736,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyTime/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = MyTime;
@@ -758,6 +769,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyTime/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = MyTime;
