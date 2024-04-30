@@ -6,3 +6,8 @@
 * MyTime ... AppleWatchとiOSとの連携
   * AppleWatchとiPhone間の通信を試す。iPhoneからはWatchのアクティブ状態を期待してはいけないが、Watchから送った時は、iPhoneはすぐに目覚めて受け取るらしい。
   * 確かにiPhoneの電源が切れたら連携が取れなくなって、そのときは通信エラーになるだろう。
+
+### bucket list やりたいことリスト
+* [ ] SwiftUIで、全画面モーダル
+* [ ] SwiftUIで、ボトムナビメニュー
+* [ ] AppleWatchでちょっと違う時計()
