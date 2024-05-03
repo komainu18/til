@@ -1,3 +1,4 @@
+### iOS/WatchOS
 * ManualSplash ... 手動スプラッシュ
   * iOSのスプラッシュ画面は、LaunchScreenで設定できるが、表示中に裏でロード（WebAPIでログインとか情報取得）したい場合、手製で画面を作成することになる。
 * LocalLocalize ... アプリ内で言語指定するローカライズ
@@ -6,6 +7,9 @@
 * MyTime ... AppleWatchとiOSとの連携
   * AppleWatchとiPhone間の通信を試す。iPhoneからはWatchのアクティブ状態を期待してはいけないが、Watchから送った時は、iPhoneはすぐに目覚めて受け取るらしい。
   * 確かにiPhoneの電源が切れたら連携が取れなくなって、そのときは通信エラーになるだろう。
+
+### Android
+* 
 
 ### bucket list やりたいことリスト
 * [ ] SwiftUIで、全画面モーダル
