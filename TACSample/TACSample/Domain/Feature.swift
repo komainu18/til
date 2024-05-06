@@ -8,48 +8,75 @@
 import Foundation
 import ComposableArchitecture
 
+enum LoadState<V, E: Error> {
+    case idle   //要求待ち
+    case loading    //ロード中
+    case success(V) //成功。値を持つ
+    case failure(E) //失敗。エラーを持つ
+}
+extension LoadState {
+    // ロード中ならtrue
+    var isLoading: Bool {
+        switch self {
+        case .loading:
+            return true
+        default:
+            return false
+        }
+    }
+}
+
 // Reducer(継手)
 
 @Reducer
 struct Feature {
     @ObservableState
-    struct State: Equatable {
-        var count = 0
-        var numberFact: String?
+    struct State {
+        var api: LoadState<ZipCloudResponse, any Error> = .idle
+        var address: String?
     }
-    
-    enum Action: Equatable {
-        case decrementButtonTapped
-        case incrementButtonTapped
-        case numberFactButtonTapped
-        case numberFactResponse(String)
+
+    // APIへ要求、結果の変換など、処理の種類をここにあげる
+    enum Action {
+        // 郵便番号文字列からAPIへ住所を要求
+        case requestAddressFromZip(String)
+        // APIからのJSON応答からデータ変換後、内容を解析する
+        case zipSearchResponse(ZipCloudResponse)
     }
     
     var body: some Reducer<State, Action> {
-      Reduce { state, action in
-        switch action {
-        case .decrementButtonTapped:
-          state.count -= 1
-          return .none
+        Reduce { state, action in
+            switch action {
+            case let .requestAddressFromZip(zip):
+                //すでにロード中ならなにもしない
+                if state.api.isLoading {
+                    return .none
+                }
+                state.api = .loading
+                return .run { send in
+                    let (data, _) = try await URLSession.shared.data(
+                        from: URL(string: "https://zipcloud.ibsnet.co.jp/api/search?zipcode=\(zip)")!
+                    )
+                    // JSONデータをデコードして返す
+                    let res: ZipCloudResponse = try JSONDecoder().decode(ZipCloudResponse.self, from: data)
+                    await send(
+                        .zipSearchResponse(res)
+                    )
+                }
 
-        case .incrementButtonTapped:
-          state.count += 1
-          return .none
+            case let .zipSearchResponse(res):
+                if let result = res.results?.first {
+                    //結果を持って「成功」にする
+                    state.address = result.address1 + result.address2 + result.address3
+                    state.api = .success(res)
+                }
+                else {
+                    state.api = .failure(fatalError(res.message ?? "失敗しました"))
+                }
+                return .none
+            }
 
-        case .numberFactButtonTapped:
-          return .run { [count = state.count] send in
-            let (data, _) = try await URLSession.shared.data(
-              from: URL(string: "http://numbersapi.com/\(count)/trivia")!
-            )
-            await send(
-              .numberFactResponse(String(decoding: data, as: UTF8.self))
-            )
-          }
-
-        case let .numberFactResponse(fact):
-          state.numberFact = fact
-          return .none
         }
-      }
     }
+    
 }

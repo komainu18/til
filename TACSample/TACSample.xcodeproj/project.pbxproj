@@ -16,6 +16,7 @@
 		EB592F3E2BE78B2900B56C99 /* TACSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB592F3D2BE78B2900B56C99 /* TACSampleUITestsLaunchTests.swift */; };
 		EB592F4E2BE7905000B56C99 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB592F4D2BE7905000B56C99 /* Feature.swift */; };
 		EB592F512BE79BA400B56C99 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EB592F502BE79BA400B56C99 /* ComposableArchitecture */; };
+		EB7638332BE8D9D70051DEB4 /* ZipCloudResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7638322BE8D9D70051DEB4 /* ZipCloudResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EB592F3B2BE78B2900B56C99 /* TACSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACSampleUITests.swift; sourceTree = "<group>"; };
 		EB592F3D2BE78B2900B56C99 /* TACSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EB592F4D2BE7905000B56C99 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		EB7638322BE8D9D70051DEB4 /* ZipCloudResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCloudResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		EB592F4C2BE78C4800B56C99 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EB7638322BE8D9D70051DEB4 /* ZipCloudResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				EB592F4E2BE7905000B56C99 /* Feature.swift in Sources */,
 				EB592F232BE78B2800B56C99 /* ContentView.swift in Sources */,
+				EB7638332BE8D9D70051DEB4 /* ZipCloudResponse.swift in Sources */,
 				EB592F212BE78B2800B56C99 /* TACSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

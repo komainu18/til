@@ -10,17 +10,33 @@ import ComposableArchitecture
 
 struct ContentView: View {
     let store: StoreOf<Feature>
+    
+    @State var inputText = ""
 
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-            Text("Hello, world!")
+            // 郵便番号入力
+            TextField("郵便番号", text: $inputText)
+                .textFieldStyle(.roundedBorder)
+                .padding()
+                .onSubmit {
+                    //郵便番号を入力後、エンターが押された
+                    store.send(.requestAddressFromZip(inputText))
+                }
+            // 結果
+            if let result = store.address {
+                Text(result)
+                    .font(.largeTitle)
+            }
         }
         .padding()
     }
 }
 
-//#Preview {
-//    ContentView()
-//}
+#Preview {
+    ContentView(
+        store: Store(initialState: Feature.State()) {
+            Feature()
+        }
+    )
+}
