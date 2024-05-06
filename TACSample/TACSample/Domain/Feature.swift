@@ -24,15 +24,26 @@ extension LoadState {
             return false
         }
     }
+
 }
 
+enum ApiError: LocalizedError {
+    case searchFailed(message: String)
+    
+    var errorDescription: String? {
+        switch self {
+        case .searchFailed(let message):
+            return message
+        }
+    }
+}
 // Reducer(継手)
 
 @Reducer
 struct Feature {
     @ObservableState
     struct State {
-        var api: LoadState<ZipCloudResponse, any Error> = .idle
+        var api: LoadState<String, any Error> = .idle
         var address: String?
     }
 
@@ -67,11 +78,11 @@ struct Feature {
             case let .zipSearchResponse(res):
                 if let result = res.results?.first {
                     //結果を持って「成功」にする
-                    state.address = result.address1 + result.address2 + result.address3
-                    state.api = .success(res)
+                    let address = result.address1 + result.address2 + result.address3
+                    state.api = .success(address)
                 }
                 else {
-                    state.api = .failure(fatalError(res.message ?? "失敗しました"))
+                    state.api = .failure(ApiError.searchFailed(message: res.message ?? "失敗しました"))
                 }
                 return .none
             }

@@ -24,8 +24,15 @@ struct ContentView: View {
                     store.send(.requestAddressFromZip(inputText))
                 }
             // 結果
-            if let result = store.address {
-                Text(result)
+            switch store.api {
+            case .success(let res):
+                Text(res)
+                    .font(.largeTitle)
+            case .failure(let err):
+                Text(err.localizedDescription)
+                    .font(.largeTitle)
+            default:
+                Text("")
                     .font(.largeTitle)
             }
         }
