@@ -12,7 +12,7 @@
   * ネットワーク異常系までは書いていない
   
 ### Android
-* 
+* 結局、JetpackComposeの方がいい？
 
 ### bucket list やりたいことリスト
 * [ ] SwiftUIで、全画面モーダル
