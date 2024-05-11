@@ -13,6 +13,10 @@
   
 ### Android
 * 結局、JetpackComposeの方がいい？
+* PostFromSwitch ... ひとまずAndroid端末にブラウザ扱いしてもらうための習作。
+  * AndroidManifest.xmlでの設定がポイントだった。
+  * メールなど、他のアプリからURLを選んだとき、Chromeなどのブラウザと一緒に選択肢に出る。
+  * もう現在のバージョンが、プロジェクト新規作成すると空のActivityがJetpackComposeになっていた。xmlとどちらかを選ぶ、とかない。
 
 ### bucket list やりたいことリスト
 * [ ] SwiftUIで、全画面モーダル
