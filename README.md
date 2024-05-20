@@ -7,7 +7,7 @@
 * MyTime ... AppleWatchとiOSとの連携
   * AppleWatchとiPhone間の通信を試す。iPhoneからはWatchのアクティブ状態を期待してはいけないが、Watchから送った時は、iPhoneはすぐに目覚めて受け取るらしい。
   * 確かにiPhoneの電源が切れたら連携が取れなくなって、そのときは通信エラーになるだろう。
-* TACSample ... TACアーキテクチャでサンプルプログラムを作ってみたもの
+* TACSample ... TCAアーキテクチャでサンプルプログラムを作ってみたもの
   * 郵便番号入力からWebAPIを用いて、結果が来たらデータを変換して表示を更新する
   * ネットワーク異常系までは書いていない
   
@@ -17,6 +17,7 @@
   * AndroidManifest.xmlでの設定がポイントだった。
   * メールなど、他のアプリからURLを選んだとき、Chromeなどのブラウザと一緒に選択肢に出る。
   * もう現在のバージョンが、プロジェクト新規作成すると空のActivityがJetpackComposeになっていた。xmlとどちらかを選ぶ、とかない。
+* TCAはSwiftUIだったか。JetpackComposeはStateとViewModelを素直に用いていく、何アーキテクチャとすればいいのか。
 
 ### bucket list やりたいことリスト
 * [ ] SwiftUIで、全画面モーダル
