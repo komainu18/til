@@ -13,11 +13,12 @@
   
 ### Android
 * 結局、JetpackComposeの方がいい？
-* PostFromSwitch ... ひとまずAndroid端末にブラウザ扱いしてもらうための習作。
-  * AndroidManifest.xmlでの設定がポイントだった。
-  * メールなど、他のアプリからURLを選んだとき、Chromeなどのブラウザと一緒に選択肢に出る。
   * もう現在のバージョンが、プロジェクト新規作成すると空のActivityがJetpackComposeになっていた。xmlとどちらかを選ぶ、とかない。
+* PostFromSwitch ... NintendoSwitchと接続して、画像ファイルを端末にダウンロード
+  * `WifiNetworkSuggestion`で接続できたが、P2Pは`WifiNetworkSpecifier`を使ったほうがいいらしいので置き換える
 * TCAはSwiftUIだったか。JetpackComposeはStateとViewModelを素直に用いていく、何アーキテクチャとすればいいのか。
+  * 「ハッハー！ViewModelは使わない方がいい」と海外の人は言っているが、DIどうするんだ。なぜかContextをinjectがうまくいかない。
+  * むしろ「そんなところでContextに依存させるなよ」ってことか。
 
 ### bucket list やりたいことリスト
 * [ ] SwiftUIで、全画面モーダル
