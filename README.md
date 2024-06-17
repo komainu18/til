@@ -14,11 +14,15 @@
 ### Android
 * 結局、JetpackComposeの方がいい？
   * もう現在のバージョンが、プロジェクト新規作成すると空のActivityがJetpackComposeになっていた。xmlとどちらかを選ぶ、とかない。
-* PostFromSwitch ... NintendoSwitchと接続して、画像ファイルを端末にダウンロード
-  * WebViewでindex.htmlを読ませて、画像URLをリスト保持する。
-  * DownloadManagerはなぜか起動しなかったので、素直にInputStreamでダウンロードした。
-  * `WifiNetworkSuggestion`で接続できたが、P2Pは`WifiNetworkSpecifier`を使ったほうがいいらしいので置き換える
-  * `connectivityManager.unregisterNetworkCallback(this)`で解除できるらしい？
+
+#### PostFromSwitch ... NintendoSwitchと接続して、画像ファイルを端末にダウンロード
+* WebViewでindex.htmlを読ませて、画像URLをリスト保持する。
+* DownloadManagerはなぜか起動しなかったので、素直にInputStreamでダウンロードした。
+* `WifiNetworkSuggestion`で接続できたが、P2Pは`WifiNetworkSpecifier`を使ったほうがいいらしいので置き換える
+* `connectivityManager.unregisterNetworkCallback(this)`で解除できるらしい？
+* HashTag
+  * 追加・編集・削除
+  * タグ名、使用回数、紐付きそうなID
 * TCAはSwiftUIだったか。JetpackComposeはStateとViewModelを素直に用いていく、何アーキテクチャとすればいいのか。
   * 「ハッハー！ViewModelは使わない方がいい」と海外の人は言っているが、DIどうするんだ。なぜかContextをinjectがうまくいかない。
   * むしろ「そんなところでContextに依存させるなよ」ってことか。
