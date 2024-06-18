@@ -24,8 +24,8 @@
   * 追加・編集・削除
   * タグ名、使用回数、紐付きそうなID
 * TCAはSwiftUIだったか。JetpackComposeはStateとViewModelを素直に用いていく、何アーキテクチャとすればいいのか。
-  * 「ハッハー！ViewModelは使わない方がいい」と海外の人は言っているが、DIどうするんだ。なぜかContextをinjectがうまくいかない。
-  * むしろ「そんなところでContextに依存させるなよ」ってことか。
+  * 「ハッハー！ViewModelは使わない方がいい」と海外の人は言っているが、DIどうするんだ。なぜかContextをinjectがうまくいかない。むしろ「そんなところでContextに依存させるなよ」ってことか。
+  * -> `koin`から`hilt`に変えたらできた。詳しい原因は覚えていない。
 
 ### bucket list やりたいことリスト
 * [ ] SwiftUIで、全画面モーダル
