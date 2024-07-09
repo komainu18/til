@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,24 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="graphic" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field">
-                                <rect key="frame" x="146.5" y="30" width="82" height="40"/>
-                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Rl0-iP-0Ne"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="graphicgraphicgraphicgraphicgraphic" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwQ-am-NRE" userLabel="Label" customClass="ExLabel" customModule="BaselineSample" customModuleProvider="target">
-                                <rect key="frame" x="30" y="100" width="310" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="label_graphicgraphicgraphicgraphicgraphic" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwQ-am-NRE" userLabel="Label" customClass="ExLabel" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="30" y="50" width="306.5" height="55"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imQ-Sq-1Lx" userLabel="Button">
-                                <rect key="frame" x="136" y="185" width="103" height="40"/>
+                                <rect key="frame" x="136" y="135" width="103" height="40"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="S1g-ZR-eYI"/>
@@ -47,17 +38,40 @@
                                     <imageReference key="image" image="paperplane" catalog="system" symbolScale="default"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="graphic" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="146.5" y="205" width="82" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rl0-iP-0Ne"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" text="TextView_graphic_graphic_graphic_graphic_graphic_graphic_graphic_graphic_graphic_graphic" translatesAutoresizingMaskIntoConstraints="NO" id="7iy-2H-wZP">
+                                <rect key="frame" x="30" y="275" width="315" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LDd-5q-TuG"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VwQ-am-NRE" secondAttribute="trailing" constant="30" id="0gi-Nd-UyA"/>
                             <constraint firstItem="VwQ-am-NRE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="2sS-I0-UkR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7iy-2H-wZP" secondAttribute="bottom" id="30P-Cu-J5V"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="top" secondItem="VwQ-am-NRE" secondAttribute="bottom" constant="30" id="DZG-Xu-FC1"/>
+                            <constraint firstAttribute="trailing" secondItem="7iy-2H-wZP" secondAttribute="trailing" constant="30" id="G5H-1F-k0x"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GkV-jF-zfa"/>
+                            <constraint firstItem="7iy-2H-wZP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="W4K-pM-VgT"/>
                             <constraint firstItem="kpZ-n7-alb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YkX-l0-Ok6"/>
-                            <constraint firstItem="kpZ-n7-alb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="j3D-Rs-Q6f"/>
-                            <constraint firstItem="VwQ-am-NRE" firstAttribute="top" secondItem="kpZ-n7-alb" secondAttribute="bottom" constant="30" id="rSp-Iq-voy"/>
+                            <constraint firstItem="kpZ-n7-alb" firstAttribute="top" secondItem="imQ-Sq-1Lx" secondAttribute="bottom" constant="30" id="j3D-Rs-Q6f"/>
+                            <constraint firstItem="7iy-2H-wZP" firstAttribute="top" secondItem="kpZ-n7-alb" secondAttribute="bottom" constant="30" id="rQX-OQ-L4f"/>
+                            <constraint firstItem="VwQ-am-NRE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="rSp-Iq-voy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,22 +87,28 @@
     </scenes>
     <designables>
         <designable name="VwQ-am-NRE">
-            <size key="intrinsicContentSize" width="409.5" height="22.5"/>
+            <size key="intrinsicContentSize" width="470" height="22.5"/>
+        </designable>
+        <designable name="kpZ-n7-alb">
+            <size key="intrinsicContentSize" width="82" height="22.5"/>
         </designable>
     </designables>
     <resources>
         <image name="paperplane" catalog="system" width="128" height="119"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

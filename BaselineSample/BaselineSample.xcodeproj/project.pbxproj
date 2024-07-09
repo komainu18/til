@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8910414D2C3D03C900121EE6 /* ExTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8910414C2C3D03C900121EE6 /* ExTextField.swift */; };
+		89DF800F2C3CD97A004D96F5 /* ExLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DF800E2C3CD97A004D96F5 /* ExLabel.swift */; };
 		EBA6D8852C396A500092C6B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6D8842C396A500092C6B3 /* AppDelegate.swift */; };
 		EBA6D8872C396A500092C6B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6D8862C396A500092C6B3 /* SceneDelegate.swift */; };
 		EBA6D8892C396A500092C6B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6D8882C396A500092C6B3 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8910414C2C3D03C900121EE6 /* ExTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExTextField.swift; sourceTree = "<group>"; };
+		89DF800E2C3CD97A004D96F5 /* ExLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExLabel.swift; sourceTree = "<group>"; };
 		EBA6D8812C396A500092C6B3 /* BaselineSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaselineSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA6D8842C396A500092C6B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA6D8862C396A500092C6B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				EBA6D88D2C396A510092C6B3 /* Assets.xcassets */,
 				EBA6D88F2C396A510092C6B3 /* LaunchScreen.storyboard */,
 				EBA6D8922C396A510092C6B3 /* Info.plist */,
+				89DF800E2C3CD97A004D96F5 /* ExLabel.swift */,
+				8910414C2C3D03C900121EE6 /* ExTextField.swift */,
 			);
 			path = BaselineSample;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBA6D8892C396A500092C6B3 /* ViewController.swift in Sources */,
+				89DF800F2C3CD97A004D96F5 /* ExLabel.swift in Sources */,
 				EBA6D8852C396A500092C6B3 /* AppDelegate.swift in Sources */,
+				8910414D2C3D03C900121EE6 /* ExTextField.swift in Sources */,
 				EBA6D8872C396A500092C6B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
