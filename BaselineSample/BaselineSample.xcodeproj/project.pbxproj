@@ -18,6 +18,7 @@
 		EBA6D89C2C396A510092C6B3 /* BaselineSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6D89B2C396A510092C6B3 /* BaselineSampleTests.swift */; };
 		EBA6D8A62C396A520092C6B3 /* BaselineSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6D8A52C396A520092C6B3 /* BaselineSampleUITests.swift */; };
 		EBA6D8A82C396A520092C6B3 /* BaselineSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6D8A72C396A520092C6B3 /* BaselineSampleUITestsLaunchTests.swift */; };
+		EBCCD04A2C417782001681CB /* ExButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCD0492C417782001681CB /* ExButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		EBA6D8A12C396A520092C6B3 /* BaselineSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaselineSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA6D8A52C396A520092C6B3 /* BaselineSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineSampleUITests.swift; sourceTree = "<group>"; };
 		EBA6D8A72C396A520092C6B3 /* BaselineSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBCCD0492C417782001681CB /* ExButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				EBA6D8922C396A510092C6B3 /* Info.plist */,
 				89DF800E2C3CD97A004D96F5 /* ExLabel.swift */,
 				8910414C2C3D03C900121EE6 /* ExTextField.swift */,
+				EBCCD0492C417782001681CB /* ExButton.swift */,
 			);
 			path = BaselineSample;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				89DF800F2C3CD97A004D96F5 /* ExLabel.swift in Sources */,
 				EBA6D8852C396A500092C6B3 /* AppDelegate.swift in Sources */,
 				8910414D2C3D03C900121EE6 /* ExTextField.swift in Sources */,
+				EBCCD04A2C417782001681CB /* ExButton.swift in Sources */,
 				EBA6D8872C396A500092C6B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
