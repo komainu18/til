@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,21 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="NÉKO Crazy honeymoon Oh cher mystérieux aventure" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwQ-am-NRE" userLabel="Label" customClass="ExLabel" customModule="BaselineSample" customModuleProvider="target">
-                                <rect key="frame" x="30" y="50" width="306" height="67.5"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0B-MH-OGV" userLabel="kg">
-                                <rect key="frame" x="336" y="98.5" width="18.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imQ-Sq-1Lx" userLabel="Button">
-                                <rect key="frame" x="111" y="147.5" width="153" height="40"/>
+                                <rect key="frame" x="111" y="40" width="153" height="40"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="S1g-ZR-eYI"/>
@@ -43,9 +29,25 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <imageReference key="image" image="cat" catalog="system" symbolScale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EqY-ID-Jy9"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter spell of restoration" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
-                                <rect key="frame" x="14.5" y="217.5" width="346.5" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="NÉKO Crazy honeymoon Oh cher mystérieux aventure" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwQ-am-NRE" userLabel="Label" customClass="ExLabel" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="30" y="100" width="306" height="49.5"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0B-MH-OGV" userLabel="kg">
+                                <rect key="frame" x="336" y="130.5" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter spell of restoration" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="10" y="169.5" width="355" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Rl0-iP-0Ne"/>
@@ -53,40 +55,27 @@
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" text="jaco the galactic patrolman" translatesAutoresizingMaskIntoConstraints="NO" id="7iy-2H-wZP">
-                                <rect key="frame" x="30" y="287.5" width="315" height="100"/>
-                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="LDd-5q-TuG"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VwQ-am-NRE" secondAttribute="trailing" constant="30" id="0gi-Nd-UyA"/>
                             <constraint firstItem="VwQ-am-NRE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="2sS-I0-UkR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7iy-2H-wZP" secondAttribute="bottom" id="30P-Cu-J5V"/>
                             <constraint firstItem="S0B-MH-OGV" firstAttribute="firstBaseline" secondItem="VwQ-am-NRE" secondAttribute="baseline" id="7RI-gN-OSs"/>
-                            <constraint firstItem="imQ-Sq-1Lx" firstAttribute="top" secondItem="VwQ-am-NRE" secondAttribute="bottom" constant="30" id="DZG-Xu-FC1"/>
-                            <constraint firstAttribute="trailing" secondItem="7iy-2H-wZP" secondAttribute="trailing" constant="30" id="G5H-1F-k0x"/>
+                            <constraint firstItem="imQ-Sq-1Lx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DZG-Xu-FC1"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GkV-jF-zfa"/>
+                            <constraint firstAttribute="trailing" secondItem="kpZ-n7-alb" secondAttribute="trailing" constant="10" id="P7i-NG-ZtU"/>
                             <constraint firstItem="S0B-MH-OGV" firstAttribute="leading" secondItem="VwQ-am-NRE" secondAttribute="trailing" id="TK2-jL-q9t"/>
-                            <constraint firstItem="7iy-2H-wZP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="W4K-pM-VgT"/>
-                            <constraint firstItem="kpZ-n7-alb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YkX-l0-Ok6"/>
-                            <constraint firstItem="kpZ-n7-alb" firstAttribute="top" secondItem="imQ-Sq-1Lx" secondAttribute="bottom" constant="30" id="j3D-Rs-Q6f"/>
-                            <constraint firstItem="7iy-2H-wZP" firstAttribute="top" secondItem="kpZ-n7-alb" secondAttribute="bottom" constant="30" id="rQX-OQ-L4f"/>
-                            <constraint firstItem="VwQ-am-NRE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="rSp-Iq-voy"/>
+                            <constraint firstAttribute="trailing" secondItem="S0B-MH-OGV" secondAttribute="trailing" id="h4J-Yq-OXc"/>
+                            <constraint firstItem="kpZ-n7-alb" firstAttribute="top" secondItem="VwQ-am-NRE" secondAttribute="bottom" constant="20" id="j3D-Rs-Q6f"/>
+                            <constraint firstItem="VwQ-am-NRE" firstAttribute="top" secondItem="imQ-Sq-1Lx" secondAttribute="bottom" constant="20" id="rSp-Iq-voy"/>
+                            <constraint firstItem="kpZ-n7-alb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="uzJ-Vh-rWs"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="imQ-Sq-1Lx" id="TuD-aq-hzD"/>
                         <outlet property="label" destination="VwQ-am-NRE" id="P7Z-S1-yEW"/>
                         <outlet property="textField" destination="kpZ-n7-alb" id="uSu-9Y-5gB"/>
-                        <outlet property="textView" destination="7iy-2H-wZP" id="1DR-cS-CNe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -96,7 +85,7 @@
     </scenes>
     <designables>
         <designable name="VwQ-am-NRE">
-            <size key="intrinsicContentSize" width="584" height="34"/>
+            <size key="intrinsicContentSize" width="584" height="25"/>
         </designable>
         <designable name="kpZ-n7-alb">
             <size key="intrinsicContentSize" width="346.5" height="22.5"/>
@@ -104,9 +93,6 @@
     </designables>
     <resources>
         <image name="cat" catalog="system" width="128" height="102"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
