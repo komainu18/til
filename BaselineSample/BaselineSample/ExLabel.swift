@@ -8,21 +8,29 @@ import UIKit
 @IBDesignable
 class ExLabel : UILabel {
     override func setNeedsLayout() {
-        if let text = self.text, self.font.familyName.starts(with: "Hiragino") {
-            /// ヒラギノファミリーの属性を変更する
+        if let text = self.text {
             var attr: [NSAttributedString.Key : Any] = self.attributedText?.attributes(at: 0, effectiveRange: nil) ?? [:]
-            // 行間をフォントサイズの半分に
+            // 行高さをフォントサイズの1.5倍に
             if let p = (attr[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle)?.mutableCopy() as? NSMutableParagraphStyle {
-                p.lineSpacing = self.font.pointSize / 2
+                p.lineHeightMultiple = 1.5
                 attr[NSAttributedString.Key.paragraphStyle] = p
             }
-            // ベースラインをdescenderのぶん、上に
-            attr[NSAttributedString.Key.baselineOffset] = NSNumber(value: -self.font.descender)
-
+            /// ヒラギノファミリーの属性を変更する
+            if self.font.familyName.starts(with: "Hiragino") {
+                // ベースラインをdescenderのぶん、上に
+                attr[NSAttributedString.Key.baselineOffset] = -self.font.descender
+            }
             self.attributedText = NSAttributedString(string: text, attributes: attr)
         }
     }
-    override func layoutSubviews() {
-        super.layoutSubviews()
-    }
 }
+
+//print(self.font.pointSize)  //20.0 17.0
+//print(self.font.lineHeight) //20.0 20.287109375
+//print(self.font.capHeight)  //15.68 11.97802734375
+//print(self.font.ascender)   //17.6 16.1865234375
+//print(self.font.descender)  //-2.4 0
+//print(self.font.leading)    //10.0 17.0
+// 34 + 33.5= 67.5 101
+//  34.5 + 34.5 = 69
+
