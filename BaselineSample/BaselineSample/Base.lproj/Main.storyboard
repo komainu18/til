@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="imQ-Sq-1Lx" userLabel="Button">
-                                <rect key="frame" x="48" y="40" width="279" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="imQ-Sq-1Lx" userLabel="Button" customClass="ExButton" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="79.5" y="40" width="216" height="40"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Qoy-OW-Mnh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="NÉKO majin">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,21 +33,21 @@
                                     <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EqY-ID-Jy9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Crazy honeymoon Oh cher mystérieux aventure" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwQ-am-NRE" userLabel="Label">
-                                <rect key="frame" x="30" y="100" width="293.5" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Crazy honeymoon Oh cher mystérieux aventure" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwQ-am-NRE" userLabel="Label" customClass="ExLabel" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="30" y="100" width="293.5" height="49.5"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0B-MH-OGV" userLabel="kg">
-                                <rect key="frame" x="323.5" y="121.5" width="51.5" height="21"/>
+                                <rect key="frame" x="323.5" y="130.5" width="51.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter spell of restoration" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field">
-                                <rect key="frame" x="10" y="160" width="355" height="40"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter spell of restoration" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="10" y="169.5" width="355" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Rl0-iP-0Ne"/>
@@ -87,13 +87,13 @@
     </scenes>
     <designables>
         <designable name="VwQ-am-NRE">
-            <size key="intrinsicContentSize" width="516" height="20"/>
+            <size key="intrinsicContentSize" width="516" height="25"/>
         </designable>
         <designable name="imQ-Sq-1Lx">
-            <size key="intrinsicContentSize" width="279" height="40"/>
+            <size key="intrinsicContentSize" width="216" height="31.5"/>
         </designable>
         <designable name="kpZ-n7-alb">
-            <size key="intrinsicContentSize" width="346.5" height="21.5"/>
+            <size key="intrinsicContentSize" width="346.5" height="22.5"/>
         </designable>
     </designables>
     <resources>

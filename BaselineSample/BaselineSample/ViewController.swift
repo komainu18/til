@@ -6,9 +6,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var button: ExButton!
+    @IBOutlet weak var label: ExLabel!
+    @IBOutlet weak var textField: ExTextField!
 
     @IBAction func tapButton(_ sender: Any) {
         let l = label.text ?? ""
