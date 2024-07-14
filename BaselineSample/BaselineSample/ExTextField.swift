@@ -29,7 +29,7 @@ class ExTextField : UITextField {
     }
 
     func setup() {
-        /// ヒラギノファミリーの属性を変更する
+        // ヒラギノファミリーのとき、属性を変更
         if let text = self.text, !text.isEmpty, let font = self.font, font.familyName.starts(with: "Hiragino") {
             var attr: [NSAttributedString.Key : Any] = self.attributedText?.attributes(at: 0, effectiveRange: nil) ?? [:]
             // ベースラインをdescenderのぶん、上に

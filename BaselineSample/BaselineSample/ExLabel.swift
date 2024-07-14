@@ -10,12 +10,12 @@ class ExLabel : UILabel {
     override func setNeedsLayout() {
         if let text = self.text {
             var attr: [NSAttributedString.Key : Any] = self.attributedText?.attributes(at: 0, effectiveRange: nil) ?? [:]
-            // 行高さをフォントサイズの1.5倍に
+            // 行高さをフォントサイズのn倍に
             if let p = (attr[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle)?.mutableCopy() as? NSMutableParagraphStyle {
                 p.lineHeightMultiple = 1.1
                 attr[NSAttributedString.Key.paragraphStyle] = p
             }
-            /// ヒラギノファミリーの属性を変更する
+            // ヒラギノファミリーのとき、属性を変更
             if self.font.familyName.starts(with: "Hiragino") {
                 // ベースラインをdescenderのぶん、上に
                 attr[NSAttributedString.Key.baselineOffset] = -self.font.descender
