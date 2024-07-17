@@ -8,7 +8,7 @@ import UIKit
 @IBDesignable
 class ExLabel : UILabel {
     override func setNeedsLayout() {
-        if let text = self.text {
+        if let text = self.text, !text.isEmpty {
             var attr: [NSAttributedString.Key : Any] = self.attributedText?.attributes(at: 0, effectiveRange: nil) ?? [:]
             // 行高さをフォントサイズのn倍に
             if let p = (attr[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle)?.mutableCopy() as? NSMutableParagraphStyle {
