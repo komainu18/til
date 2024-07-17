@@ -8,7 +8,7 @@ import UIKit
 @IBDesignable
 class ExButton : UIButton {
     override func setNeedsLayout() {
-        if let label = self.titleLabel, let text = label.text {
+        if let label = self.titleLabel, let text = label.text, !text.isEmpty  {
             var attr: [NSAttributedString.Key : Any] = label.attributedText?.attributes(at: 0, effectiveRange: nil) ?? [:]
             // 行高さをフォントサイズのn倍に
             if let p = (attr[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle)?.mutableCopy() as? NSMutableParagraphStyle {

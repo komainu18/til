@@ -32,6 +32,11 @@ class ExTextField : UITextField {
         // placeholder
         if let text = self.placeholder, !text.isEmpty {
             var attr: [NSAttributedString.Key : Any] = self.attributedPlaceholder?.attributes(at: 0, effectiveRange: nil) ?? [:]
+            // 行高さをフォントサイズのn倍に
+            if let p = (attr[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle)?.mutableCopy() as? NSMutableParagraphStyle {
+                p.lineHeightMultiple = 1.1
+                attr[NSAttributedString.Key.paragraphStyle] = p
+            }
             if let font = attr[NSAttributedString.Key.font] as? UIFont, font.familyName.starts(with: "Hiragino") {
                 // ベースラインをdescenderのぶん、上に
                 let descender = attr[NSAttributedString.Key.baselineOffset] as? CGFloat
@@ -49,11 +54,18 @@ class ExTextField : UITextField {
     }
 
     func setupText() {
-        // ヒラギノファミリーのとき、属性を変更
-        if let text = self.text, !text.isEmpty, let font = self.font, font.familyName.starts(with: "Hiragino") {
+        if let text = self.text, !text.isEmpty {
             var attr: [NSAttributedString.Key : Any] = self.attributedText?.attributes(at: 0, effectiveRange: nil) ?? [:]
-            // ベースラインをdescenderのぶん、上に
-            attr[NSAttributedString.Key.baselineOffset] = NSNumber(value: -font.descender)
+            // 行高さをフォントサイズのn倍に
+            if let p = (attr[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle)?.mutableCopy() as? NSMutableParagraphStyle {
+                p.lineHeightMultiple = 1.1
+                attr[NSAttributedString.Key.paragraphStyle] = p
+            }
+            // ヒラギノファミリーのとき、属性を変更
+            if let font = self.font, font.familyName.starts(with: "Hiragino") {
+                // ベースラインをdescenderのぶん、上に
+                attr[NSAttributedString.Key.baselineOffset] = NSNumber(value: -font.descender)
+            }
             self.attributedText = NSAttributedString(string: text, attributes: attr)
         }
     }

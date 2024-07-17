@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter spell of restoration" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
-                                <rect key="frame" x="10" y="169.5" width="355" height="22.5"/>
+                                <rect key="frame" x="10" y="169.5" width="355" height="25"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -90,7 +90,7 @@
             <size key="intrinsicContentSize" width="216" height="31.5"/>
         </designable>
         <designable name="kpZ-n7-alb">
-            <size key="intrinsicContentSize" width="346.5" height="22.5"/>
+            <size key="intrinsicContentSize" width="346.5" height="25"/>
         </designable>
     </designables>
     <resources>
