@@ -43,6 +43,7 @@ class ExTextField : UITextField {
         }
     }
 
+    // テキストが変更された
     @objc func textFieldDidChange(textField: UITextField) {
         setupText()
     }
