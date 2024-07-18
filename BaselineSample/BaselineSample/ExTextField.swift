@@ -26,8 +26,14 @@ class ExTextField : UITextField {
     }
 
     private func setup() {
+        // default
         var attr: [NSAttributedString.Key : Any] = self.defaultTextAttributes
-        setup(attr: &attr)
+        if let font = attr[NSAttributedString.Key.font] as? UIFont {
+            if font.familyName.starts(with: "Hiragino") {
+                // ベースラインをdescenderのぶん、上に
+                attr[NSAttributedString.Key.baselineOffset] = -font.descender
+            }
+        }
         self.defaultTextAttributes = attr
 
         // placeholder
@@ -39,30 +45,18 @@ class ExTextField : UITextField {
         else {
             pAttr = [:]
         }
-        setup(attr: &pAttr)
-        self.attributedPlaceholder = NSAttributedString(string: text, attributes: pAttr)
-    }
-
-    private func setup( attr: inout [NSAttributedString.Key : Any]) {
-        // 行高さをフォントサイズのn倍に
-        if let p = (attr[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle)?.mutableCopy() as? NSMutableParagraphStyle {
-            p.lineHeightMultiple = 1.1
-            attr[NSAttributedString.Key.paragraphStyle] = p
-        }
-        if let font = attr[NSAttributedString.Key.font] as? UIFont {
+        if let font = pAttr[NSAttributedString.Key.font] as? UIFont {
             if font.familyName.starts(with: "Hiragino") {
                 // ベースラインをdescenderのぶん、上に
-                let descender = attr[NSAttributedString.Key.baselineOffset] as? CGFloat
-                if descender == nil || descender! > -font.descender {
-                    attr[NSAttributedString.Key.baselineOffset] = -font.descender
+                pAttr[NSAttributedString.Key.baselineOffset] = -font.descender
+                // 行高さを最大まで補える倍率に設定
+                if let p = (pAttr[NSAttributedString.Key.paragraphStyle] as? NSParagraphStyle)?.mutableCopy() as? NSMutableParagraphStyle {
+                    p.lineHeightMultiple = font.ascender / font.capHeight
+                    pAttr[NSAttributedString.Key.paragraphStyle] = p
                 }
             }
         }
+        self.attributedPlaceholder = NSAttributedString(string: text, attributes: pAttr)
     }
 
-    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        let b = super.placeholderRect(forBounds: bounds)
-        // placeholderの位置をtextと合わせたい時
-        return CGRect(x: b.origin.x, y: floor(b.origin.y), width: bounds.width, height: bounds.height)
-    }
 }
