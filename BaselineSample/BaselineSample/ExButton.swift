@@ -7,7 +7,25 @@ import UIKit
 
 @IBDesignable
 class ExButton : UIButton {
-    override func setNeedsLayout() {
+    // コードから初期化
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    // Storyboard/xib から初期化
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        setup()
+    }
+    public override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        setup()
+    }
+
+    private func setup() {
         if let label = self.titleLabel, let text = label.text, !text.isEmpty  {
             var attr: [NSAttributedString.Key : Any] = label.attributedText?.attributes(at: 0, effectiveRange: nil) ?? [:]
             // 行高さをフォントサイズのn倍に

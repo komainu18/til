@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBAction func tapButton(_ sender: Any) {
         let l = label.text ?? ""
-        label.text = l + " poke"
+        label.text = l + " go poke"
         let f = textField.text ?? ""
         textField.text = f + " pe"
     }

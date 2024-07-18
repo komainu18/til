@@ -26,7 +26,6 @@ class ExTextField : UITextField {
     }
 
     private func setup() {
-        
         var attr: [NSAttributedString.Key : Any] = self.defaultTextAttributes
         setup(attr: &attr)
         self.defaultTextAttributes = attr
