@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,24 +35,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Crazy honeymoon Oh cher mystérieux aventure" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwQ-am-NRE" userLabel="Label" customClass="ExLabel" customModule="BaselineSample" customModuleProvider="target">
-                                <rect key="frame" x="30" y="100" width="293.5" height="49.5"/>
+                                <rect key="frame" x="30" y="100" width="293.5" height="40"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0B-MH-OGV" userLabel="kg">
-                                <rect key="frame" x="323.5" y="130.5" width="51.5" height="21"/>
+                                <rect key="frame" x="323.5" y="121.5" width="51.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Éyj Please enter spell of restoration" placeholder="Éyj Please enter spell of restoration" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
-                                <rect key="frame" x="10" y="169.5" width="355" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Égo Please enter spell of restoration" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="10" y="160" width="355" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="jxM-qb-stf"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZxR-pz-wqs"/>
                                 </constraints>
+                                <color key="textColor" name="text_black"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -64,6 +66,7 @@
                             <constraint firstItem="S0B-MH-OGV" firstAttribute="firstBaseline" secondItem="VwQ-am-NRE" secondAttribute="baseline" id="7RI-gN-OSs"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DZG-Xu-FC1"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GkV-jF-zfa"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kpZ-n7-alb" secondAttribute="bottom" id="JK2-YB-JRd"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="OQL-jH-bI6"/>
                             <constraint firstAttribute="trailing" secondItem="kpZ-n7-alb" secondAttribute="trailing" constant="10" id="P7i-NG-ZtU"/>
                             <constraint firstItem="S0B-MH-OGV" firstAttribute="leading" secondItem="VwQ-am-NRE" secondAttribute="trailing" id="TK2-jL-q9t"/>
@@ -86,18 +89,15 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="VwQ-am-NRE">
-            <size key="intrinsicContentSize" width="516" height="25"/>
-        </designable>
-        <designable name="imQ-Sq-1Lx">
-            <size key="intrinsicContentSize" width="216" height="31.5"/>
-        </designable>
         <designable name="kpZ-n7-alb">
-            <size key="intrinsicContentSize" width="385.5" height="34"/>
+            <size key="intrinsicContentSize" width="394" height="25"/>
         </designable>
     </designables>
     <resources>
         <image name="cat" catalog="system" width="128" height="102"/>
+        <namedColor name="text_black">
+            <color red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
