@@ -26,8 +26,15 @@ class ExButton : UIButton {
     }
 
     private func setup() {
-        if let label = self.titleLabel, let text = label.text, !text.isEmpty  {
-            var attr: [NSAttributedString.Key : Any] = label.attributedText?.attributes(at: 0, effectiveRange: nil) ?? [:]
+        if let label = self.titleLabel {
+            let text = label.text ?? ""
+            var attr: [NSAttributedString.Key : Any]
+            if !text.isEmpty, let a = label.attributedText?.attributes(at: 0, effectiveRange: nil) {
+                attr = a
+            }
+            else {
+                attr = [:]
+            }
             // ヒラギノファミリーのとき、属性を変更
             if label.font.familyName.starts(with: "Hiragino") {
                 // ベースラインをdescenderのぶん、上に
