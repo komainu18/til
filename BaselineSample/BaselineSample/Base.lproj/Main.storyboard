@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -42,21 +42,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0B-MH-OGV" userLabel="kg">
-                                <rect key="frame" x="323.5" y="131.5" width="51.5" height="21"/>
+                                <rect key="frame" x="323.5" y="131.5" width="51.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Égo Please enter spell of restoration" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
-                                <rect key="frame" x="10" y="170.5" width="355" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Égyo Please enter spell of restoration" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-n7-alb" userLabel="Field" customClass="ExTextField" customModule="BaselineSample" customModuleProvider="target">
+                                <rect key="frame" x="10" y="165.5" width="336.5" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ZxR-pz-wqs"/>
+                                    <constraint firstAttribute="height" constant="30" id="MY9-hz-x4H"/>
                                 </constraints>
                                 <color key="textColor" name="text_black"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="yg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufI-yW-4nW">
+                                <rect key="frame" x="346.5" y="172" width="18.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,16 +70,18 @@
                             <constraint firstItem="VwQ-am-NRE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="2sS-I0-UkR"/>
                             <constraint firstItem="S0B-MH-OGV" firstAttribute="firstBaseline" secondItem="VwQ-am-NRE" secondAttribute="baseline" id="7RI-gN-OSs"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DZG-Xu-FC1"/>
+                            <constraint firstItem="ufI-yW-4nW" firstAttribute="firstBaseline" secondItem="kpZ-n7-alb" secondAttribute="firstBaseline" id="GPP-Sr-hqH"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GkV-jF-zfa"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kpZ-n7-alb" secondAttribute="bottom" id="JK2-YB-JRd"/>
                             <constraint firstItem="imQ-Sq-1Lx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="OQL-jH-bI6"/>
-                            <constraint firstAttribute="trailing" secondItem="kpZ-n7-alb" secondAttribute="trailing" constant="10" id="P7i-NG-ZtU"/>
                             <constraint firstItem="S0B-MH-OGV" firstAttribute="leading" secondItem="VwQ-am-NRE" secondAttribute="trailing" id="TK2-jL-q9t"/>
+                            <constraint firstItem="ufI-yW-4nW" firstAttribute="top" secondItem="S0B-MH-OGV" secondAttribute="bottom" constant="20" id="Ubl-o3-16X"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="imQ-Sq-1Lx" secondAttribute="trailing" constant="10" id="WPz-7k-bvY"/>
+                            <constraint firstAttribute="trailing" secondItem="ufI-yW-4nW" secondAttribute="trailing" constant="10" id="bFG-AS-Wjm"/>
                             <constraint firstAttribute="trailing" secondItem="S0B-MH-OGV" secondAttribute="trailing" id="h4J-Yq-OXc"/>
-                            <constraint firstItem="kpZ-n7-alb" firstAttribute="top" secondItem="VwQ-am-NRE" secondAttribute="bottom" constant="20" id="j3D-Rs-Q6f"/>
                             <constraint firstItem="VwQ-am-NRE" firstAttribute="top" secondItem="imQ-Sq-1Lx" secondAttribute="bottom" constant="20" id="rSp-Iq-voy"/>
                             <constraint firstItem="kpZ-n7-alb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="uzJ-Vh-rWs"/>
+                            <constraint firstItem="ufI-yW-4nW" firstAttribute="leading" secondItem="kpZ-n7-alb" secondAttribute="trailing" id="w6l-RQ-jRi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -96,7 +103,7 @@
             <size key="intrinsicContentSize" width="216" height="31.5"/>
         </designable>
         <designable name="kpZ-n7-alb">
-            <size key="intrinsicContentSize" width="394" height="25.5"/>
+            <size key="intrinsicContentSize" width="406.5" height="25.5"/>
         </designable>
     </designables>
     <resources>
@@ -105,16 +112,13 @@
             <color red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

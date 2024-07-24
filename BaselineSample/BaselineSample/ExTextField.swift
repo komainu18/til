@@ -26,16 +26,6 @@ class ExTextField : UITextField {
     }
 
     private func setup() {
-        // default
-        var attr: [NSAttributedString.Key : Any] = self.defaultTextAttributes
-        if let font = attr[NSAttributedString.Key.font] as? UIFont {
-            if font.familyName.starts(with: "Hiragino") {
-                // ベースラインをdescenderのぶん、上に
-                attr[NSAttributedString.Key.baselineOffset] = -font.descender
-            }
-        }
-        self.defaultTextAttributes = attr
-
         // placeholder
         let text = self.placeholder ?? ""
         var pAttr: [NSAttributedString.Key : Any]
@@ -58,5 +48,4 @@ class ExTextField : UITextField {
         }
         self.attributedPlaceholder = NSAttributedString(string: text, attributes: pAttr)
     }
-
 }
