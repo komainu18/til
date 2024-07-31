@@ -97,6 +97,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="S0B-MH-OGV">
+            <size key="intrinsicContentSize" width="18.5" height="20.5"/>
+        </designable>
         <designable name="VwQ-am-NRE">
             <size key="intrinsicContentSize" width="516" height="25.5"/>
         </designable>
@@ -105,6 +108,9 @@
         </designable>
         <designable name="kpZ-n7-alb">
             <size key="intrinsicContentSize" width="312" height="23"/>
+        </designable>
+        <designable name="ufI-yW-4nW">
+            <size key="intrinsicContentSize" width="18.5" height="20.5"/>
         </designable>
     </designables>
     <resources>
