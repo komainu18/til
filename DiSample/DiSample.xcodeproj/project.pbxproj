@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB8D34402F53620C00A8E337 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D343F2F53620C00A8E337 /* ComposableArchitecture */; };
+		EB8D34692F53733D00A8E337 /* ClientModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D34682F53733D00A8E337 /* ClientModule */; };
+		EB8D346B2F53733E00A8E337 /* DataModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D346A2F53733D00A8E337 /* DataModule */; };
+		EB8D346D2F53733E00A8E337 /* FeatureModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D346C2F53733E00A8E337 /* FeatureModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +36,24 @@
 		EB8D342B2F5361B100A8E337 /* DiSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EB8D34652F53732200A8E337 /* Exceptions for "DiSample" folder in "DiSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ClientModule,
+				DataModule,
+				FeatureModule,
+			);
+			target = EB8D34132F5361B000A8E337 /* DiSample */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EB8D34162F5361B000A8E337 /* DiSample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EB8D34652F53732200A8E337 /* Exceptions for "DiSample" folder in "DiSample" target */,
+			);
 			path = DiSample;
 			sourceTree = "<group>";
 		};
@@ -57,6 +75,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB8D34402F53620C00A8E337 /* ComposableArchitecture in Frameworks */,
+				EB8D34692F53733D00A8E337 /* ClientModule in Frameworks */,
+				EB8D346B2F53733E00A8E337 /* DataModule in Frameworks */,
+				EB8D346D2F53733E00A8E337 /* FeatureModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +104,7 @@
 				EB8D34162F5361B000A8E337 /* DiSample */,
 				EB8D34242F5361B100A8E337 /* DiSampleTests */,
 				EB8D342E2F5361B100A8E337 /* DiSampleUITests */,
+				EB8D34672F53733D00A8E337 /* Frameworks */,
 				EB8D34152F5361B000A8E337 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +117,13 @@
 				EB8D342B2F5361B100A8E337 /* DiSampleUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EB8D34672F53733D00A8E337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +147,9 @@
 			name = DiSample;
 			packageProductDependencies = (
 				EB8D343F2F53620C00A8E337 /* ComposableArchitecture */,
+				EB8D34682F53733D00A8E337 /* ClientModule */,
+				EB8D346A2F53733D00A8E337 /* DataModule */,
+				EB8D346C2F53733E00A8E337 /* FeatureModule */,
 			);
 			productName = DiSample;
 			productReference = EB8D34142F5361B000A8E337 /* DiSample.app */;
@@ -596,6 +628,18 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB8D343E2F53620C00A8E337 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		EB8D34682F53733D00A8E337 /* ClientModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClientModule;
+		};
+		EB8D346A2F53733D00A8E337 /* DataModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataModule;
+		};
+		EB8D346C2F53733E00A8E337 /* FeatureModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
