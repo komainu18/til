@@ -7,15 +7,17 @@
 
 import SwiftUI
 import FeatureModule
-//import InterfaceModule
-//import ImplementationModule
+import ComposableArchitecture
+import InterfaceModule
+import ImplementationModule
+import ClientModule
 
 @main
 struct DiSampleApp: App {
     init() {
-//        prepareDependencies {
-//            $0.messageRepository = .live
-//        }
+        prepareDependencies {
+            $0.messageRepository = .live
+        }
     }
     var body: some Scene {
         WindowGroup {

@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		EB8D34402F53620C00A8E337 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D343F2F53620C00A8E337 /* ComposableArchitecture */; };
 		EB8D34692F53733D00A8E337 /* ClientModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D34682F53733D00A8E337 /* ClientModule */; };
-		EB8D346B2F53733E00A8E337 /* DataModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D346A2F53733D00A8E337 /* DataModule */; };
 		EB8D346D2F53733E00A8E337 /* FeatureModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D346C2F53733E00A8E337 /* FeatureModule */; };
+		EB8D34732F53794F00A8E337 /* InterfaceModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D34722F53794F00A8E337 /* InterfaceModule */; };
+		EB8D348B2F53798500A8E337 /* ImplementationModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D348A2F53798500A8E337 /* ImplementationModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ClientModule,
-				DataModule,
 				FeatureModule,
 			);
 			target = EB8D34132F5361B000A8E337 /* DiSample */;
@@ -74,9 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8D348B2F53798500A8E337 /* ImplementationModule in Frameworks */,
+				EB8D34732F53794F00A8E337 /* InterfaceModule in Frameworks */,
 				EB8D34402F53620C00A8E337 /* ComposableArchitecture in Frameworks */,
 				EB8D34692F53733D00A8E337 /* ClientModule in Frameworks */,
-				EB8D346B2F53733E00A8E337 /* DataModule in Frameworks */,
 				EB8D346D2F53733E00A8E337 /* FeatureModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,8 +149,9 @@
 			packageProductDependencies = (
 				EB8D343F2F53620C00A8E337 /* ComposableArchitecture */,
 				EB8D34682F53733D00A8E337 /* ClientModule */,
-				EB8D346A2F53733D00A8E337 /* DataModule */,
 				EB8D346C2F53733E00A8E337 /* FeatureModule */,
+				EB8D34722F53794F00A8E337 /* InterfaceModule */,
+				EB8D348A2F53798500A8E337 /* ImplementationModule */,
 			);
 			productName = DiSample;
 			productReference = EB8D34142F5361B000A8E337 /* DiSample.app */;
@@ -633,13 +635,17 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = ClientModule;
 		};
-		EB8D346A2F53733D00A8E337 /* DataModule */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DataModule;
-		};
 		EB8D346C2F53733E00A8E337 /* FeatureModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FeatureModule;
+		};
+		EB8D34722F53794F00A8E337 /* InterfaceModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = InterfaceModule;
+		};
+		EB8D348A2F53798500A8E337 /* ImplementationModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImplementationModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
