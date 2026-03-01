@@ -16,6 +16,7 @@ import ClientModule
 struct DiSampleApp: App {
     init() {
         prepareDependencies {
+            // Interface側の DependencyValues に Implementation側の実体を注入
             $0.messageRepository = .live
         }
     }
