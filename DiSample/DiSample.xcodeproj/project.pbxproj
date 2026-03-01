@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB8404A62F542DAC00737F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB84049F2F542DAC00737F24 /* Assets.xcassets */; };
+		EB8404A72F542DAC00737F24 /* ClientModule in Resources */ = {isa = PBXBuildFile; fileRef = EB8404A02F542DAC00737F24 /* ClientModule */; };
+		EB8404A82F542DAC00737F24 /* FeatureModule in Resources */ = {isa = PBXBuildFile; fileRef = EB8404A22F542DAC00737F24 /* FeatureModule */; };
+		EB8404A92F542DAC00737F24 /* ImplementationModule in Resources */ = {isa = PBXBuildFile; fileRef = EB8404A32F542DAC00737F24 /* ImplementationModule */; };
+		EB8404AA2F542DAC00737F24 /* InterfaceModule in Resources */ = {isa = PBXBuildFile; fileRef = EB8404A42F542DAC00737F24 /* InterfaceModule */; };
+		EB8404AB2F542DAC00737F24 /* DiSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8404A12F542DAC00737F24 /* DiSampleApp.swift */; };
 		EB8D34402F53620C00A8E337 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D343F2F53620C00A8E337 /* ComposableArchitecture */; };
 		EB8D34692F53733D00A8E337 /* ClientModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D34682F53733D00A8E337 /* ClientModule */; };
 		EB8D346D2F53733E00A8E337 /* FeatureModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D346C2F53733E00A8E337 /* FeatureModule */; };
@@ -32,17 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB84049F2F542DAC00737F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB8404A02F542DAC00737F24 /* ClientModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ClientModule; sourceTree = "<group>"; };
+		EB8404A12F542DAC00737F24 /* DiSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiSampleApp.swift; sourceTree = "<group>"; };
+		EB8404A22F542DAC00737F24 /* FeatureModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureModule; sourceTree = "<group>"; };
+		EB8404A32F542DAC00737F24 /* ImplementationModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ImplementationModule; sourceTree = "<group>"; };
+		EB8404A42F542DAC00737F24 /* InterfaceModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InterfaceModule; sourceTree = "<group>"; };
 		EB8D34142F5361B000A8E337 /* DiSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8D34212F5361B100A8E337 /* DiSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8D342B2F5361B100A8E337 /* DiSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EB8D34162F5361B000A8E337 /* DiSample */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DiSample;
-			sourceTree = "<group>";
-		};
 		EB8D34242F5361B100A8E337 /* DiSampleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DiSampleTests;
@@ -85,10 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB8404A52F542DAC00737F24 /* DiSample */ = {
+			isa = PBXGroup;
+			children = (
+				EB84049F2F542DAC00737F24 /* Assets.xcassets */,
+				EB8404A12F542DAC00737F24 /* DiSampleApp.swift */,
+				EB8404A22F542DAC00737F24 /* FeatureModule */,
+				EB8404A02F542DAC00737F24 /* ClientModule */,
+				EB8404A42F542DAC00737F24 /* InterfaceModule */,
+				EB8404A32F542DAC00737F24 /* ImplementationModule */,
+			);
+			path = DiSample;
+			sourceTree = "<group>";
+		};
 		EB8D340B2F5361B000A8E337 = {
 			isa = PBXGroup;
 			children = (
-				EB8D34162F5361B000A8E337 /* DiSample */,
+				EB8404A52F542DAC00737F24 /* DiSample */,
 				EB8D34242F5361B100A8E337 /* DiSampleTests */,
 				EB8D342E2F5361B100A8E337 /* DiSampleUITests */,
 				EB8D34672F53733D00A8E337 /* Frameworks */,
@@ -127,9 +147,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				EB8D34162F5361B000A8E337 /* DiSample */,
 			);
 			name = DiSample;
 			packageProductDependencies = (
@@ -241,6 +258,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8404A62F542DAC00737F24 /* Assets.xcassets in Resources */,
+				EB8404A72F542DAC00737F24 /* ClientModule in Resources */,
+				EB8404A82F542DAC00737F24 /* FeatureModule in Resources */,
+				EB8404A92F542DAC00737F24 /* ImplementationModule in Resources */,
+				EB8404AA2F542DAC00737F24 /* InterfaceModule in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8404AB2F542DAC00737F24 /* DiSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

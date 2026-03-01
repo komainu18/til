@@ -1,6 +1,4 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
-
+// Feature.swift / FeatureModule
 import Foundation
 import ComposableArchitecture
 import ClientModule

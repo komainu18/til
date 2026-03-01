@@ -1,5 +1,4 @@
-//  ContentView.swift
-//  FeatureModule
+//  ContentView.swift / FeatureModule
 import SwiftUI
 import ComposableArchitecture
 
@@ -16,7 +15,6 @@ public struct ContentView: View {
         VStack(spacing: 20) {
             Text(store.text)
                 .font(.headline)
-            
             Button("データを取得") {
                 store.send(.buttonTapped)
             }
@@ -35,7 +33,6 @@ public struct ContentView: View {
         }
     )
 }
-
 #Preview("エラー発生時") {
     ContentView(
         store: Store(initialState: Feature.State()) {

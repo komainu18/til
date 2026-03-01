@@ -1,8 +1,6 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
-
+// MessageRepository.swift / InterfaceModule
+// Interfaceとして、ClientとInplementation両方に「依存される」(依存性逆転パターン)
 import Dependencies
-
 
 public struct MessageRepository: Sendable {
     public var fetch: @Sendable () async -> String
